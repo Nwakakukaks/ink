@@ -8,11 +8,11 @@ export const Index = () => {
   return (
     <div>
       <header tw="fixed w-full">
-        <nav tw="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
-          <div tw="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+        <nav tw="border-gray-200 bg-white py-2.5 dark:bg-gray-900">
+          <div tw="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between px-4">
             <Link href="/" tw="flex items-center">
-              <span tw="self-center text-xl font-semibold whitespace-nowrap dark:text-white text-pink-500">
-                InkMint
+              <span tw="self-center whitespace-nowrap font-semibold text-xl text-pink-500 dark:text-white">
+                Task-Tracker
               </span>
             </Link>
             <div tw="flex items-center lg:order-2">
@@ -21,13 +21,13 @@ export const Index = () => {
               <button
                 data-collapse-toggle="mobile-menu-2"
                 type="button"
-                tw="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                tw="ml-1 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:(outline-none ring-2 ring-gray-200) dark:(text-gray-400 hover:bg-gray-700 focus:ring-gray-600) lg:hidden"
                 aria-controls="mobile-menu-2"
                 aria-expanded="false"
               >
                 <span tw="sr-only">Open main menu</span>
                 <svg
-                  tw="w-6 h-6"
+                  tw="h-6 w-6"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ export const Index = () => {
                   ></path>
                 </svg>
                 <svg
-                  tw="hidden w-6 h-6"
+                  tw="hidden h-6 w-6"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -53,35 +53,18 @@ export const Index = () => {
               </button>
             </div>
             <div
-              tw="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
+              tw="hidden w-full items-center justify-between lg:(order-1 flex w-auto)"
               id="mobile-menu-2"
             >
-              <ul tw="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+              <ul tw="mt-4 flex flex-col font-medium lg:(mt-0 flex-row space-x-8)">
                 <li>
                   <Link
                     href="/"
-                    tw="block py-2 pl-3 pr-4 text-white bg-pink-400 rounded lg:bg-transparent lg:text-pink-400 lg:p-0 dark:text-white"
+                    tw="block rounded bg-pink-400 py-2 pl-3 pr-4 text-white dark:text-white lg:(bg-transparent p-0 text-pink-400)"
                     aria-current="page"
                   >
                     Home
                   </Link>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    tw="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-pink-400 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >
-                    Dashboard
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    tw="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-pink-400 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >
-                    Profile
-                  </a>
                 </li>
               </ul>
             </div>
